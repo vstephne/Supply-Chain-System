@@ -1,0 +1,15 @@
+<form>
+    <div class="form-group">
+        <label for="item">Item Name</label>    
+        <input required ngModel name="item"  #item="ngModel" id="item" type="text" class="form-control">
+        <div class="alert alert-danger" *ngIf="!item.valid">Item name is a required field</div>
+    </div>
+
+    <div class="form-group">
+        <label for="unit_weight">Unit weight</label>    
+        <input required ngModel name="unit_weight" #unit_weight="ngModel" id="unit_weight" type="text" class="form-control">
+        <div class="alert alert-danger" *ngIf="!unit_weight.valid">Unit Weight is a required field</div>
+    </div>
+
+    <button class="btn btn-primary"  (click)="clickFunction(item.value,unit_weight.value)">Submit</button>
+</form>

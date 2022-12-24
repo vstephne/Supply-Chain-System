@@ -1,0 +1,42 @@
+<div>
+    <div class="item">
+       <div class="item">ITEM TABLE
+       </div>
+
+       <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Unit Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let arr of ITEM_DATA">
+            <td>{{arr.item}}</td>
+            <td>{{arr.unitWeight}}</td>
+            </tr>
+        </tbody>
+      </table>
+    <!-- </div> -->
+    </div>
+
+    <div class="getShippedVSCustDemand">
+        <div class="getShippedVSCustDemand">ShippedVSCustDemand TABLE
+        </div>
+ 
+        <table>
+         <thead>
+             <tr>
+                 <th>Customer</th>
+                 <th>Item</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr *ngFor="let arr of ShippedVSCustDemand">
+             <td>{{arr.customer}}</td>
+             <td>{{arr.item}}</td>
+             </tr>
+         </tbody>
+       </table>
+     </div>
+</div>
